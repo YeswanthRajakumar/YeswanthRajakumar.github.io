@@ -27,7 +27,58 @@
     <link rel="stylesheet" href="css/css/skills.css">
     
     
+<style>
+  
+.skills {
+  width: 100%;
+  max-width: 600px;
+  padding: 5% 5%;
+  margin-top: 3%;
+}
 
+.skill-bar {
+  height: 20px;
+  background: #cacaca;
+  border-radius: 8px;
+  margin-top: 3%;
+}
+
+.skill{
+    margin-top: 3%;
+}
+.skill-per {
+  height: 20px;
+  background-color: #2f89fc;
+  border-radius: 8px;
+  width: 0;
+  position: relative;
+  transition: 1s linear;
+}
+.skill-per::before {
+  content: attr(per);
+  position: absolute;
+  padding: 6px 10px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+.skill-per::after {
+  content: none;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  top: -16px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+</style>
   </head>
   <body>
 
